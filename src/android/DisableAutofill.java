@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.os.Build;
+import java.lang.Integer;
 
 
 public class DisableAutofill extends CordovaPlugin {
