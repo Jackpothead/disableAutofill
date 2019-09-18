@@ -23,7 +23,7 @@
       </feature>
     </config-file>
 
-    <source-file src="src/android/DisableAutoFill.java" target-dir="src/com/noesis/disableAutofill/"/>
+    <source-file src="src/android/DisableAutofill.java" target-dir="src/com/noesis/disableAutofill/"/>
   </platform>
 
 </plugin>
