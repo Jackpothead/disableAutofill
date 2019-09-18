@@ -12,7 +12,8 @@ public class DisableAutofill extends CordovaPlugin {
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
         if (action.equals("disable")) {
-            AutofillManager autofillManager = getSystemService(AutofillManager.class);
+            Context context = this.cordova.getActivity().getApplicationContext();
+            AutofillManager autofillManager = context.getSystemService(AutofillManager.class);
             autofillManager.disableAutofillServices();
 
             return true;
