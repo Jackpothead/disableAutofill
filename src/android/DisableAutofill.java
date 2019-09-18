@@ -23,7 +23,7 @@ public class DisableAutofill extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray data, CallbackContext callbackContext) throws JSONException {
 
-        if (action.equals("disable") && (Integer.valueOf(android.os.Build.VERSION.SDK_INT) >= 26) {
+        if (action.equals("disable") && (Integer.valueOf(android.os.Build.VERSION.SDK_INT) >= 26) ) {
             cordova.getActivity().runOnUiThread(new Runnable() {
                 @SuppressWarnings("ResourceType")
                 @Override
